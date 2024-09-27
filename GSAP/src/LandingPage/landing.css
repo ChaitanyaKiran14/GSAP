@@ -1,41 +1,48 @@
 /* Landing page styles */
 .landing-page {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #000; /* Black background for dramatic effect */
-    color: white;
-    min-height: 100vh;
-  }
-  
-  .title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #ff0000; /* Red like F1 cars */
-    font-family: 'Formula1-Regular', sans-serif;
-  }
-  
-  .car-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .f1-car {
-    width: 300px;
-    height: auto;
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-  }
-  
-  .f1-car:hover {
-    transform: scale(1.1) rotate(5deg); /* Small tilt and zoom on hover */
-  }
-  
-  .tagline {
-    font-size: 1.5rem;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  font-family: 'Formula1-Regular', sans-serif;
+}
+
+.car-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.f1-car {
+  width: 300px;
+  height: auto;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.f1-car:hover {
+  transform: scale(1.1) rotate(5deg); /* Small tilt and zoom on hover */
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* To create space for scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 200vh; /* Double height to allow scrolling */
+}
+
