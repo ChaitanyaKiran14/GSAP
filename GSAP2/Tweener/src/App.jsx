@@ -3,7 +3,6 @@ import Second from "./Components/Second"
 const App = () => {
   return (
     <div>
-      <First/>
       <Second/>
     </div>
     
