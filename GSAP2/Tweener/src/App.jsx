@@ -34,16 +34,17 @@ function App() {
 
   return (
     <> 
-    <div className='relative '>
+    <div ref={comp} className='relative '>
       <div id='introslider' className='flex flex-col justify-center place-items-center' >
       <h1 id='title1' className="text-3xl font-bold text-black ">Software Engineer</h1>
       <h1 id='title2' className="text-3xl font-bold text-black  "> Designer</h1>
       <h1 id='title3' className='text-3xl font-semibold text-black'> Freelancer </h1>
       </div>
-    </div>
-    <div className='h-screen flex justify-center place-items-center '>
+      <div id='welcome' className='h-screen flex justify-center place-items-center '>
       <h1 className='text-9xl font-bold  text-green-500'> Welcome</h1>
     </div>
+    </div>
+   
 
     
     
