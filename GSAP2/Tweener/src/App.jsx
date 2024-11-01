@@ -1,9 +1,8 @@
-import First from "./Components/first"
-import Second from "./Components/Second"
+import Gallery from "./Components/MasonryLayout.JSX"
 const App = () => {
   return (
-    <div>
-      <Second/>
+    <div >
+     <Gallery />
     </div>
     
   )
