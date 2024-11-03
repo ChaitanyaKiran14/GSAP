@@ -1,8 +1,9 @@
-import Gallery from "./Components/MasonryLayout.JSX"
+import TestSwiper from "./Components/Swiper2.JSX"
+import ProductSlider from "./Components/Swiperjs"
 const App = () => {
   return (
     <div >
-     <Gallery />
+     <TestSwiper />
     </div>
     
   )

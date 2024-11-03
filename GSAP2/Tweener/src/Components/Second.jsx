@@ -47,7 +47,7 @@ const Second = () => {
                 <h1  id="text2" className="text-red-500">Test 2</h1>
                 <h1 id="text3" className="text-red-500">Test 3</h1>
         </div>
-        <div id="welcome" className="flex justify-center place-items-center h-screen w-full text-3xl bg-slate-300 ">
+        <div  id="welcome" className="flex justify-center place-items-center h-screen w-full text-3xl bg-slate-300 ">
             <h1 className="text-green-600 bold">Welcome Stark</h1>
         </div>
         </div>
