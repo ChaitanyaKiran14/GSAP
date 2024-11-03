@@ -1,17 +1,39 @@
 import prod1 from '../assets/images/product1.png';
-import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Mousewheel, Thumbs, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { gsap } from 'gsap';
+import prod2 from '../assets/images/product2.png'
+import prod3 from '../assets/images/product3.png';
 
+const products = [
+    {
+      id: 1,
+      image: prod1,
+      background: "bg-gradient-to-b from-[#FE783D] to-[#121826]",
+      color: "Blood Orange",
+      price: "$1250",
+      productId: "3534R4"
+    },
+    {
+      id: 2,
+      image: prod2,
+      background: "bg-gradient-to-b from-[#00499D] to-[#121826]",
+      color: "Navy Blue",
+      price: "$1250",
+      productId: "3535R4"
+    },
+    {
+      id: 3,
+      image: prod3,
+      background: "bg-gradient-to-b from-[#DAB1C8] to-[#511990]",
+      color: "Purple Rose",
+      price: "$1250",
+      productId: "3536R4"
+    }
+  ];
 const TestSwiper = () => {
     return (
+    
         <div className="h-screen font-['Poppins'] text-black overflow-hidden">
 
-              {/* Navigation */}
+     
             <nav className="navigation fixed top-8 right-20 w-4/5 flex items-center gap-12 text-sm z-10">
                 <a href="#" className="text-black ">Men</a>
                 <a href="#" className="text-black ">Women</a>
@@ -32,13 +54,12 @@ const TestSwiper = () => {
                 </div>
             </nav>
 
-            {/* Vertical Text */}
+      
             <div className="absolute top-1/2 left-2 transform -rotate-90 text-black text-6xl font-bold">
                 POSSESSED
             </div>
 
-            {/* Credits Section */}
-            <div className="absolute top-60 left-60 mt-10 flex flex-col  text-black">
+            <div className="absolute top-60 left-60 mt-10 flex flex-col text-black">
                 <h1 className="font-semibold">CREDITS</h1>
                 <p>Agency: @chaitanya</p>
                 <p>AI: chaitu@meta</p>
@@ -48,17 +69,33 @@ const TestSwiper = () => {
                 <p>@minniatur</p>
             </div>
 
-            {/* Centered Image */}
-            <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2">
-                <img src={prod1} alt="Product" className="h-96 w-auto" />
-            </div>
+          
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <img src={prod1} alt="Product" className="h-[650px] w-auto" />
+            </div> 
 
-            {/* Color Section */}
             <div className="absolute top-1/4 right-80 text-black">
                 <h1 className="font-semibold">COLOR:</h1>
                 <p>Blood Orange</p>
                 <h2 className="font-semibold mt-4">$1250</h2>
-                <button className="bg-brown-600 text-black px-4 py-2 mt-2">Place Bid</button>
+            </div>
+
+           
+            <div className="absolute bottom-40 right-[28%] z-10 w-[200px]">
+                <div className='flex flex-row '>
+                {products.map((product) => (
+                    <div key={product.id} className="h-[60px] rounded-lg overflow-hidden cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+                    <img src={product.image} alt={`Thumbnail ${product.id}`} className="object-cover h-full w-full" />
+                    </div>
+                ))}
+                </div>
+            </div>
+
+            <div className="fixed bottom-10 left-60 z-10 flex gap-6 text-sm">
+                <a href="#" className="text-black ">IN</a>
+                <a href="#" className="text-black ">TW</a>
+                <a href="#" className="text-black opacity-70 ">YT</a>
+                <a href="#" className="text-black opacity-70">OS</a>
             </div>
         </div>
     );
