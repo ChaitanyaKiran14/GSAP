@@ -28,12 +28,12 @@ const products = [
       productId: "3536R4"
     }
   ];
+
 const TestSwiper = () => {
     return (
-    
         <div className="h-screen font-['Poppins'] text-black overflow-hidden">
 
-     
+              {/* Navigation */}
             <nav className="navigation fixed top-8 right-20 w-4/5 flex items-center gap-12 text-sm z-10">
                 <a href="#" className="text-black ">Men</a>
                 <a href="#" className="text-black ">Women</a>
@@ -54,12 +54,13 @@ const TestSwiper = () => {
                 </div>
             </nav>
 
-      
+            {/* Vertical Text */}
             <div className="absolute top-1/2 left-2 transform -rotate-90 text-black text-6xl font-bold">
                 POSSESSED
             </div>
 
-            <div className="absolute top-60 left-60 mt-10 flex flex-col text-black">
+            {/* Credits Section */}
+            <div className="absolute top-60 left-60 mt-10 flex flex-col  text-black">
                 <h1 className="font-semibold">CREDITS</h1>
                 <p>Agency: @chaitanya</p>
                 <p>AI: chaitu@meta</p>
@@ -69,22 +70,23 @@ const TestSwiper = () => {
                 <p>@minniatur</p>
             </div>
 
-          
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <img src={prod1} alt="Product" className="h-[650px] w-auto" />
+            {/* Centered Image */}
+            <div className="absolute top-1/4 left-1/2  transform -translate-x-1/2">
+                <img src={prod1} alt="Product" className="h-[550px] w-auto" />
             </div> 
 
+            {/* Color Section */}
             <div className="absolute top-1/4 right-80 text-black">
                 <h1 className="font-semibold">COLOR:</h1>
                 <p>Blood Orange</p>
                 <h2 className="font-semibold mt-4">$1250</h2>
             </div>
 
-           
-            <div className="absolute bottom-40 right-[28%] z-10 w-[200px]">
+            {/* Slider */}
+            <div className="fixed bottom-40 right-[24%] w-[200px]">
                 <div className='flex flex-row '>
                 {products.map((product) => (
-                    <div key={product.id} className="h-[60px] rounded-lg overflow-hidden cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+                    <div key={product.id} className="h-[60px] rounded-lg overflow-hidden cursor-pointer  opacity-40 hover:opacity-100 transition-opacity">
                     <img src={product.image} alt={`Thumbnail ${product.id}`} className="object-cover h-full w-full" />
                     </div>
                 ))}
