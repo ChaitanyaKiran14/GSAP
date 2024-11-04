@@ -1,6 +1,6 @@
-import prod1 from '../assets/images/product1.png';
-import prod2 from '../assets/images/product2.png'
-import prod3 from '../assets/images/product3.png';
+import prod1 from '../assets/images/optim.png';
+import prod2 from '../assets/images/mega.png'
+import prod3 from '../assets/images/bumel.png';
 
 const products = [
     {

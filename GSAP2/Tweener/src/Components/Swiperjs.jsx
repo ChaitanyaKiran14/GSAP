@@ -7,9 +7,11 @@ import 'swiper/css/pagination';
 import { gsap } from 'gsap';
 
 // Import images from the local assets folder
-import product1 from "../assets/images/product1.png";
-import product2 from "../assets/images/product2.png";
-import product3 from "../assets/images/product3.png";
+import product1 from "../assets/images/optim.png";
+import product2 from "../assets/images/mega.png";
+import product3 from "../assets/images/bumel.png";
+
+
 
 const products = [
   {
