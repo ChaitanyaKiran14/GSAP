@@ -61,13 +61,13 @@ const TestSwiper = () => {
 
             {/* Credits Section */}
             <div className="absolute top-60 left-60 mt-10 flex flex-col  text-black">
-                <h1 className="font-semibold">CREDITS</h1>
-                <p>Agency: @chaitanya</p>
-                <p>AI: chaitu@meta</p>
-                <p>Retouching: @twistedloupe</p>
-                <h1 className="font-semibold mt-4">We Say Hi Production Team</h1>
-                <p>@adellatucker</p>
-                <p>@minniatur</p>
+                <h1 className="font-semibold">OPTIMUS PRIME</h1>
+                <p>Role : Autobot Leader</p>
+                <p>Weapons : Ion Blaster, Energon Axe</p>
+                <p>Special Move : Matrix Smash</p>
+                <h1 className="font-semibold mt-4">Freedom is the right of all sentient beings</h1>
+                <p>Skill : 9/10</p>
+                <p>Strength : 10/10</p>
             </div>
 
             {/* Centered Image */}

@@ -85,7 +85,7 @@ const ProductSlider = () => {
       {/* Credits Section */}
       <div className="credits fixed top-1/4 left-20 z-10 text-xs space-y-6">
         <div>
-          <p className="font-medium mb-1 text-white">CREDITS</p>
+          <p className="font-medium mb-1 text-white">Optimus Prime</p>
           <p className="opacity-70  text-white">Agency: @wesayhi</p>
           <p className="opacity-70  text-white">At: @mahison.meta</p>
           <p className="opacity-70  text-white">Retouching: @twistedloupe</p>
