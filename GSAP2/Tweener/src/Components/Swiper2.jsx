@@ -35,9 +35,9 @@ const TestSwiper = () => {
 
               {/* Navigation */}
             <nav className="navigation fixed top-8 right-20 w-4/5 flex items-center gap-12 text-sm z-10">
-                <a href="#" className="text-black ">Men</a>
-                <a href="#" className="text-black ">Women</a>
-                <a href="#" className="text-black ">Customise</a>
+                <a href="#" className="text-black ">HOME</a>
+                <a href="#" className="text-black ">ABOUT</a>
+                <a href="#" className="text-black ">GALLERY</a>
                 <div className="ml-auto flex items-center gap-8">
                 <a href="#" className="flex items-center gap-2 text-black ">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,8 +55,8 @@ const TestSwiper = () => {
             </nav>
 
             {/* Vertical Text */}
-            <div className="absolute top-1/2 left-2 transform -rotate-90 text-black text-6xl font-bold">
-                POSSESSED
+            <div className="absolute top-1/2  left-[18%] transform -rotate-90 -translate-x-96 text-black text-6xl font-bold">
+                <h1>TRANSFORMERS</h1>
             </div>
 
             {/* Credits Section */}
