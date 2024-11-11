@@ -49,7 +49,7 @@ const ProductSlider = () => {
     gsap.from('.credits', { x: -50, opacity: 0, duration: 1, delay: 0.7 });
     gsap.from('.product-info', { y: 30, opacity: 0, duration: 1, delay: 0.9 });
     gsap.from('.product-image', { scale: 0.9, opacity: 0, duration: 1.2, delay: 0.5 });
-    gsap.from('.navigation', { y: -30, opacity: 0, duration: 1, delay: 0.3 });
+    //gsap.from('.navigation', { y: -30, opacity: 0, duration: 1, delay: 0.3 });
   }, []);
 
   const handleSlideChange = (swiper) => {
@@ -126,11 +126,7 @@ const ProductSlider = () => {
         {products.map((product, index) => (
           <SwiperSlide key={product.id} className={`${product.background} relative flex justify-center items-center`}>
             {/* Product Image */}
-            <img 
-              src={product.image} 
-              alt={`Product ${product.id}`} 
-              className="product-image object-cover h-[85%] w-auto z-10"
-            />
+            <img src={product.image}    alt={`Product ${product.id}`}    className="product-image object-cover h-[85%] w-auto z-10" />
 
             {/* Product Info */}
             <div className="product-info absolute right-20 top-1/2 -translate-y-1/2 space-y-8">
@@ -145,10 +141,10 @@ const ProductSlider = () => {
               </div>
 
               <div className="flex flex-col gap-4">
-                <button className="px-16 py-4 bg-white/10 hover:bg-white/20 transition-colors text-white text-sm">
+                <button className="px-16 py-4  text-black text-sm">
                   Style
                 </button>
-                <button className="px-16 py-4 bg-black/25 hover:bg-black/40 transition-colors text-white text-sm">
+                <button className="px-16 py-4  text-black text-sm">
                   Place Bid
                 </button>
               </div>

@@ -2,6 +2,9 @@ import prod1 from '../assets/images/optim.png';
 import prod2 from '../assets/images/mega.png'
 import prod3 from '../assets/images/bumel.png';
 
+
+
+
 const products = [
     {
       id: 1,
